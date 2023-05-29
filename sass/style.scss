@@ -484,8 +484,8 @@ html,body {
       .cards-projetos{
         display: flex;
         flex-direction: column;
-        //flex-grow: 1;
-        //flex-shrink: 1;
+        min-width: 13rem;
+        min-height: auto;
         border: 2px solid #0d6dde;
         border-radius: 15px;
  
@@ -493,17 +493,18 @@ html,body {
           border-radius: 15px 15px 0px 0px ;
           margin: 0px;
           width: 100%;
-          height: 80%;
+          //flex: 1;
           object-fit: cover;
         }
 
         .txt-Projetos{
           display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0;
-          flex:1;
-          font-size: 1rem;
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 1.2rem;
+          margin: 0 ;
+          padding: 0 0 .2rem 1.2rem;
+          height: 35%;
           color: #fff;
           border-top: 2px solid #0d6dde;
           background-color: transparent;
@@ -947,7 +948,11 @@ html,body {
         .cards-projetos{
           display: flex;
           min-width: 12rem;
-          min-height: 12rem;
+
+          .txt-Projetos{
+            font-size: 0.8rem;
+          }
+          
         } 
 
 
@@ -1356,7 +1361,11 @@ html,body {
         .cards-projetos{
           display: flex;
           min-width: 13rem;
-          min-height: 16rem;
+
+          .txt-Projetos{
+            font-size: .8rem
+          }
+          
         } 
 
 
@@ -1615,34 +1624,36 @@ html,body {
    // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
 
   #Projetos{
-    
+      
     .miniContainer-projetos{
-      min-width: 25rem;
-      height: 27rem;
+      min-width: 80%;
+      height: 30rem;
     
       .projetos-Content{
-        grid-template-columns: 90%;
+        grid-template-columns:  60%;
 
         .cards-projetos{
-          display: flex;
           min-width: 13rem;
-          min-height: 16rem;
+          
+
+          .txt-Projetos{
+            height: 35%;
+            font-size: .8rem
+          }
         } 
-
-
+        #sem-projetos{
+          display: flex;
+        }
       }
       #bnt-projetos{
         display: none;
       }
     }
-    /*.mais-projetos {
-      height: 25rem;
-      transition: 0.3s;
-    }*/
-  
+    
+    
+    
     
   }
-
 
 }  
   // PARA TELAS ENTRE 900PX e 1100PX
@@ -2012,7 +2023,10 @@ html,body {
 
           .cards-projetos{
             min-width: 13rem;
-            min-height: 13rem;
+
+            .txt-Projetos{
+              font-size: .8rem
+            }
           } 
         }
       }
@@ -2278,13 +2292,21 @@ html,body {
     min-width: 60rem;
     height: 40rem;
     
+    
     .projetos-Content{
+      width: 100%;
       grid-template-columns: repeat(2, 40%);
+      
     }
 
     .cards-projetos{
+      justify-content: center;
       min-width: 13rem;
-      min-height: 12rem;
+      
+      .txt-Projetos{
+        font-size: .7rem
+      }
+      
     } 
     
     .project3 {
@@ -2301,6 +2323,7 @@ html,body {
   .mais-projetos {
       height: 70rem;
       transition: 0.3s;
+      
   }
 }
 // PARA TELAS ENTRE 1300PX E 1600PX
@@ -2531,23 +2554,25 @@ html,body {
 
     .miniContainer-projetos {
   
-      width: 60rem;
-      height: 21rem;
+      width: 80%;
+      height: 26rem;
 
+      .projetos-Content{
 
-      
-      .cards-projetos{
-        min-width: 13rem;
-        min-height: 12rem;
+        .cards-projetos{
+          min-width: 13rem;
 
-        .txt-Projetos{
-          font-size: 1.2rem;
-        }
+          .txt-Projetos{
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 1rem;
+          }
         
-      } 
+        } 
+      }
     }
     .mais-projetos {
-        height: 37rem;
+        height: 47rem;
         transition: 0.3s;
     } 
   }

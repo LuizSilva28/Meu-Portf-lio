@@ -393,6 +393,8 @@ html, body {
 .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos {
   display: flex;
   flex-direction: column;
+  min-width: 13rem;
+  min-height: auto;
   border: 2px solid #0d6dde;
   border-radius: 15px;
 }
@@ -400,16 +402,16 @@ html, body {
   border-radius: 15px 15px 0px 0px;
   margin: 0px;
   width: 100%;
-  height: 80%;
   object-fit: cover;
 }
 .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.2rem;
   margin: 0;
-  flex: 1;
-  font-size: 1rem;
+  padding: 0 0 0.2rem 1.2rem;
+  height: 35%;
   color: #fff;
   border-top: 2px solid #0d6dde;
   background-color: transparent;
@@ -747,7 +749,9 @@ html, body {
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     display: flex;
     min-width: 12rem;
-    min-height: 12rem;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
+    font-size: 0.8rem;
   }
   #Projetos .miniContainer-projetos #bnt-projetos {
     display: none;
@@ -1058,7 +1062,9 @@ html, body {
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     display: flex;
     min-width: 13rem;
-    min-height: 16rem;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
+    font-size: 0.8rem;
   }
   #Projetos .miniContainer-projetos #bnt-projetos {
     display: none;
@@ -1254,23 +1260,22 @@ html, body {
     grid-column: 2/3;
     grid-row: 4/5;
   }
-  #Projetos {
-    /*.mais-projetos {
-      height: 25rem;
-      transition: 0.3s;
-    }*/
-  }
   #Projetos .miniContainer-projetos {
-    min-width: 25rem;
-    height: 27rem;
+    min-width: 80%;
+    height: 30rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
-    grid-template-columns: 90%;
+    grid-template-columns: 60%;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
-    display: flex;
     min-width: 13rem;
-    min-height: 16rem;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
+    height: 35%;
+    font-size: 0.8rem;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content #sem-projetos {
+    display: flex;
   }
   #Projetos .miniContainer-projetos #bnt-projetos {
     display: none;
@@ -1562,7 +1567,9 @@ html, body {
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     min-width: 13rem;
-    min-height: 13rem;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
+    font-size: 0.8rem;
   }
   #Projetos .project3 {
     grid-column: 1/2;
@@ -1765,11 +1772,15 @@ html, body {
     height: 40rem;
   }
   #Projetos .projetos-Content {
+    width: 100%;
     grid-template-columns: repeat(2, 40%);
   }
   #Projetos .cards-projetos {
+    justify-content: center;
     min-width: 13rem;
-    min-height: 12rem;
+  }
+  #Projetos .cards-projetos .txt-Projetos {
+    font-size: 0.7rem;
   }
   #Projetos .project3 {
     grid-column: 1/2;
@@ -1956,18 +1967,19 @@ html, body {
     grid-row: 3/4;
   }
   .section-projetos .miniContainer-projetos {
-    width: 60rem;
-    height: 21rem;
+    width: 80%;
+    height: 26rem;
   }
-  .section-projetos .miniContainer-projetos .cards-projetos {
+  .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     min-width: 13rem;
-    min-height: 12rem;
   }
-  .section-projetos .miniContainer-projetos .cards-projetos .txt-Projetos {
-    font-size: 1.2rem;
+  .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
   }
   .section-projetos .mais-projetos {
-    height: 37rem;
+    height: 47rem;
     transition: 0.3s;
   }
 }
