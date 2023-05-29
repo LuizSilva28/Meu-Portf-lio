@@ -457,7 +457,7 @@ html, body {
   }
   .oculto {
     margin-top: 1rem;
-    width: 8%;
+    width: 1.3rem;
     border-radius: 0 0.4rem 0.4rem 0;
     flex-grow: 1;
     height: 3.5rem;
@@ -475,7 +475,7 @@ html, body {
     margin: 10px;
   }
   .oculto .navBar #bntMenu .icon {
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
     margin: auto 0px auto 0;
     transition: 0.3s;
   }
@@ -533,8 +533,9 @@ html, body {
     margin: 0;
   }
   .header {
-    min-height: 40vh;
-    background-size: 100% auto;
+    margin: 0 0 1rem 0;
+    min-height: 40%;
+    background-size: 100% 100%;
     justify-content: start;
   }
   .header .bemVindo-Aling {
@@ -550,8 +551,8 @@ html, body {
   }
   .header .perfil-Aling img {
     border-radius: 30%;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
   }
   .header .frase-Aling {
     display: flex;
@@ -561,6 +562,7 @@ html, body {
   .header .frase-Aling .text-frase {
     font-size: 0.6rem;
     margin: 0;
+    text-shadow: 0 0 1rem #000;
   }
   .header #autor-Aling {
     display: flex;
@@ -568,19 +570,25 @@ html, body {
     align-items: center;
   }
   .header #autor-Aling .autor-text {
-    padding: 0;
+    padding: 0.5rem 0 1rem 0;
     font-size: 0.5rem;
-    margin: 0 0 0 10.5rem;
+    margin: 0 0 0 10rem;
+    text-shadow: 0 0 1rem #000;
   }
   .section-Sobremim {
-    height: 85rem;
+    height: 48rem;
     margin: 0;
+  }
+  .section-Sobremim h1 {
+    margin: 0.5rem;
+    font-size: 1.3rem;
+    text-shadow: 0 0 1rem #006eff;
   }
   .section-Sobremim .content-Sobremim {
     display: flex;
     align-items: center;
     padding: 10px;
-    width: 80%;
+    width: 85%;
     height: auto;
     box-shadow: inset 0px 0px 10px 1px #0d6dde;
   }
@@ -594,21 +602,22 @@ html, body {
   }
   .section-Sobremim .content-Sobremim .txt-sobremim p {
     position: relative;
+    font-size: 1rem;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     flex: 1;
     width: 98%;
   }
   .section-Sobremim .content-Sobremim .txt-sobremim #img1 {
-    width: 13rem;
-    height: 13rem;
+    width: 10rem;
+    height: 10rem;
     margin: 0;
     box-shadow: 0 0 0.5em #000;
   }
   .section-Sobremim .content-Sobremim .wrapper {
     display: flex;
     justify-content: center;
-    margin: 0 0 0 1.5rem;
-    width: 15rem;
+    margin: 0;
+    width: 12.5rem;
     position: relative;
   }
   .section-Sobremim .content-Sobremim .wrapper i {
@@ -622,23 +631,25 @@ html, body {
     line-height: 46px;
     background: #fff;
     border-radius: 50%;
-    transform: translateY(50%);
+    transform: translateY(108%);
   }
   .section-Sobremim .content-Sobremim .wrapper i:first-child {
-    left: -1.1rem;
+    left: -0.8rem;
     display: none;
   }
   .section-Sobremim .content-Sobremim .wrapper i:last-child {
-    right: 0.4rem;
+    right: -0.5rem;
   }
   .section-Sobremim .content-Sobremim .wrapper .carousel {
+    margin: 0;
+    gap: 0.6rem;
     overflow: hidden;
     font-size: 0px;
     cursor: pointer;
     white-space: nowrap;
     scroll-behavior: smooth;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .section-Sobremim .content-Sobremim .wrapper .carousel .dragging {
     cursor: grab;
@@ -648,10 +659,10 @@ html, body {
     pointer-events: none;
   }
   .section-Sobremim .content-Sobremim .wrapper .carousel img {
-    height: 13rem;
-    min-width: 13rem;
+    height: 12rem;
+    min-width: 12rem;
     object-fit: cover;
-    margin-left: 1rem;
+    margin: 0;
   }
   .section-Sobremim .content-Sobremim .wrapper .carousel img:first-child {
     margin-left: 0px;
@@ -662,7 +673,7 @@ html, body {
     border-radius: 1rem;
     border-bottom: 2px solid #1556ce;
     border-top: 2px solid #1556ce;
-    padding: 5rem 0 5rem 0;
+    padding: 1rem 0 5rem 0;
   }
   .softskiils .softskill-container {
     display: grid;
@@ -670,6 +681,7 @@ html, body {
   }
   .softskiils .softskill-container .text-softskill {
     margin: 1rem;
+    font-size: 0.9rem;
     text-shadow: 0 0 1rem #006eff;
   }
   .softskiils .softskill-container .cards-soft {
@@ -738,6 +750,14 @@ html, body {
   .softskiils .Hardskill-container .card-6 {
     grid-column: 1/2;
     grid-row: 7/8;
+  }
+  #Projetos {
+    margin: 2rem 0 10rem 0;
+  }
+  #Projetos .título-projetos {
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+    text-shadow: 0 0 1rem #006eff;
   }
   #Projetos .miniContainer-projetos {
     min-width: 15rem;

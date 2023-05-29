@@ -572,7 +572,7 @@ html,body {
 
   .oculto {
     margin-top: 1rem;
-    width: 8%;
+    width: 1.3rem;
     border-radius: 0  0.4rem 0.4rem 0;
     flex-grow: 1;
     height: 3.5rem;
@@ -592,7 +592,7 @@ html,body {
         margin: 10px;
     
         .icon {
-          transform: rotate(-90deg);
+          transform: rotate(180deg);
           margin: auto  0px auto 0;
           transition: .3s;
         }
@@ -673,9 +673,9 @@ html,body {
   // HEADER // HEADER // HEADER // HEADER // HEADER // HEADER 
 
   .header {
-    
-    min-height: 40vh;
-    background-size: 100% auto;
+    margin: 0 0 1rem 0;
+    min-height: 40%;
+    background-size: 100% 100%;
     justify-content: start;
   
 
@@ -695,8 +695,8 @@ html,body {
 
         img {
         border-radius: 30%;
-        width: 6rem;
-        height: 6rem;
+        width: 5rem;
+        height: 5rem;
       }
     }
 
@@ -710,6 +710,7 @@ html,body {
       .text-frase {
         font-size: .6rem;
         margin:  0;
+        text-shadow: 0 0 1rem #000;
       }
     }
     #autor-Aling {
@@ -718,9 +719,10 @@ html,body {
       align-items: center;
 
       .autor-text {
-        padding: 0;
+        padding: .5rem 0 1rem 0;
         font-size: .5rem;
-        margin: 0 0 0 10.5rem ;
+        margin: 0 0 0 10rem ;
+        text-shadow: 0 0 1rem #000;
       }
     }
 
@@ -730,14 +732,20 @@ html,body {
   //SOBRE MIM //SOBRE MIM //SOBRE MIM //SOBRE MIM //SOBRE MIM 
     
   .section-Sobremim{
-    height: 85rem;
+    height: 48rem;
     margin: 0;
+    
+    h1{
+      margin: .5rem;
+      font-size: 1.3rem;
+      text-shadow: 0 0 1rem #006eff;
+    }
   
-      .content-Sobremim{
+    .content-Sobremim{
         display: flex;
         align-items: center;
         padding: 10px;
-        width: 80%;
+        width: 85%;
         height: auto;
         box-shadow: inset 0px 0px 10px 1px #0d6dde;
         
@@ -751,13 +759,14 @@ html,body {
   
           p {
             position: relative;
+            font-size: 1rem;
             margin: .5rem .5rem .5rem .5rem;
             flex: 1;
             width: 98%;
           }
           #img1 {
-            width: 13rem;
-            height: 13rem;
+            width: 10rem;
+            height: 10rem;
             margin: 0;
             box-shadow: 0 0 0.5em #000;
 
@@ -765,48 +774,48 @@ html,body {
         }
     // CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSEL 
 
-    .wrapper{
-      display: flex;
-      justify-content: center;
-      margin: 0 0 0 1.5rem;
-      width: 15rem;
-      position: relative;
+      .wrapper{
+        display: flex;
+        justify-content: center;
+        margin: 0 ;
+        width: 12.5rem;
+        position: relative;
       
   
-      i {
-        
-        
-        top: 50%;
-        height: 2.9rem;
-        width: 2.9rem; 
-        cursor: pointer;
-        font-size: 1.2rem ;
-        position: absolute;
-        text-align: center;
-        line-height: 46px;
-        background: #fff;
-        border-radius: 50%;
-        transform: translateY(50%); 
+        i {
+          top: 50%;
+          height: 2.9rem;
+          width: 2.9rem; 
+          cursor: pointer;
+          font-size: 1.2rem ;
+          position: absolute;
+          text-align: center;
+          line-height: 46px;
+          background: #fff;
+          border-radius: 50%;
+          transform: translateY(108%); 
       }
 
       
   
       i:first-child{
-        left: -1.1rem;
+        left: -.8rem;
         display: none;
       }
       i:last-child{
-        right: 0.4rem;
+        right: -.5rem;
       }
   
       .carousel{
+        margin: 0;
+        gap: .6rem;
         overflow: hidden;
         font-size: 0px;
         cursor: pointer;
         white-space:nowrap;
         scroll-behavior: smooth;
         width: 100%;
-        padding: 1rem;
+        padding: .5rem;
         
 
         .dragging{
@@ -817,11 +826,12 @@ html,body {
           pointer-events: none;
         }
         img {
-          height:13rem;
-          min-width: 13rem;
+          height:12rem;
+          min-width: 12rem;
           object-fit: cover;
-          margin-left: 1rem;
-          //width: calc(100% / 2);
+          margin: 0;
+          
+          
         }
         img:first-child{
           margin-left: 0px;
@@ -839,7 +849,7 @@ html,body {
       border-radius:  1rem;
       border-bottom: 2px solid #1556ce;
       border-top: 2px solid #1556ce;
-      padding: 5rem 0 5rem 0 ;
+      padding: 1rem 0 5rem 0 ;
     
     .softskill-container{
       
@@ -848,7 +858,7 @@ html,body {
       
       .text-softskill{
         margin: 1rem;
-        
+        font-size: .9rem;
         text-shadow: 0 0 1rem #006eff;
       }
       
@@ -937,7 +947,13 @@ html,body {
   // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
 
   #Projetos{
-    
+    margin: 2rem 0 10rem 0;
+    .título-projetos{
+      font-size: 1rem;
+      margin: 1rem 0 1rem 0;
+      text-shadow: 0 0 1rem #006eff;
+    }
+
     .miniContainer-projetos{
       min-width: 15rem;
       height: 23rem;
