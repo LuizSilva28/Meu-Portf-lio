@@ -719,7 +719,8 @@ html, body {
     grid-template-columns: 100%;
   }
   .softskiils .Hardskill-container .text-hardskill {
-    margin: 1rem;
+    font-size: 0.9rem;
+    text-shadow: 0 0 1rem #006eff;
   }
   .softskiils .Hardskill-container .cards-hard {
     height: 12rem;

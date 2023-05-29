@@ -905,7 +905,8 @@ html,body {
       grid-template-columns: 100%;
 
       .text-hardskill{
-        margin: 1rem;
+        font-size: .9rem;
+        text-shadow: 0 0 1rem #006eff;
       }
       .cards-hard{
         height: 12rem;
