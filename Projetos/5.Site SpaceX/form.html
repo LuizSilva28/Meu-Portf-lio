@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SpaceX</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./meusite.html">
+          <img src="./imagens/SpaceX.png" />
+        </a>
+        <a href="./pagina2.html"> | The Spaceships</a>
+        <a href="./form.html">| Hire Us</a>
+        <hr />
+      </nav>
+    </header>
+    <div>
+      <div>
+        <h3>Hire Us Now</h3>
+        <p>
+          Leave a message to request one of our services and we will get back as
+          you as soon as possible.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Luiz, Juliana e etc..." />
+        <label for="email">- Email:</label>
+        <input type="email" id="email" placeholder="@gmail.com" />
+      </div>
+      <br />
+      <br />
+      <label for="nave">Spacechip:</label>
+      <select name="nave" id="nave">
+        <option value="Falcon 9">Falcon 9</option>
+        <option value="Falcon Heavy">Falcon Heavy</option>
+      </select>
+      <label for="service"> Type of Service:</label>
+      <input list="services" name="service" id="service" />
+      <datalist id="services">
+        <option value="Lorem ipsum dolor sit amet"></option>
+        <option value="aliquam soluta numquam officiis"></option>
+        <option
+          value="ipsum dolor sit amet consectetur adipisicing elit"
+        ></option>
+        <option
+          value="recusandae facilis vero. Hic eum explicabo vero"
+        ></option>
+      </datalist>
+    </div>
+    <br />
+    <br />
+    <div>
+      <input type="button" value="Send Massage" />
+    </div>
+  </body>
+</html>

@@ -121,6 +121,7 @@ html, body {
 }
 
 .mainContent {
+  width: 100%;
   margin-left: 3rem;
 }
 
@@ -376,7 +377,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  height: 100%;
+  height: auto;
   padding: 1rem;
   border: 2px solid #0d6dde;
   border-radius: 20px;
@@ -394,14 +395,18 @@ html, body {
   display: flex;
   flex-direction: column;
   min-width: 13rem;
-  min-height: auto;
+  max-height: 15rem;
   border: 2px solid #0d6dde;
   border-radius: 15px;
 }
-.section-projetos .miniContainer-projetos .projetos-Content .cards-projetos .card-alingImg {
-  border-radius: 15px 15px 0px 0px;
+.section-projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
+  height: 70%;
+}
+.section-projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
+  border-radius: 14px 14px 0px 0px;
   margin: 0px;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
@@ -412,10 +417,13 @@ html, body {
   margin: 0;
   padding: 0 0 0.2rem 1.2rem;
   height: 35%;
-  color: #fff;
+  color: #ffffff;
   border-top: 2px solid #0d6dde;
   background-color: transparent;
   border-radius: 0px 0px 11px 11px;
+}
+.section-projetos .miniContainer-projetos .projetos-Content #sem-projetos {
+  display: none;
 }
 .section-projetos .miniContainer-projetos #bnt-projetos {
   display: flex;
@@ -428,23 +436,25 @@ html, body {
   margin: 0px auto 0px auto;
   transition: 0.3s;
 }
-.section-projetos .miniContainer-projetos #sem-projetos {
-  display: none;
-}
 .section-projetos .mais-projetos {
+  height: auto;
   transition: 0.3s;
 }
-.section-projetos .mais-projetos #sem-projetos {
+.section-projetos .mais-projetos .projetos-Content {
+  margin: 1rem;
+}
+.section-projetos .mais-projetos .projetos-Content #sem-projetos {
   display: flex;
 }
-.section-projetos .mais-projetos .bnt-projetos {
+.section-projetos .mais-projetos #bnt-projetos {
   display: flex;
   justify-content: flex-end;
-  margin: 10px auto 10px 0px;
+  margin: 1rem auto 0rem auto;
 }
-.section-projetos .mais-projetos .icon-project {
+.section-projetos .mais-projetos #bnt-projetos .icon-project {
   transform: rotate(-180deg);
   margin: 0px auto 0px auto;
+  transition: 0.3s;
 }
 
 .footer {
@@ -762,7 +772,7 @@ html, body {
   }
   #Projetos .miniContainer-projetos {
     min-width: 15rem;
-    height: 23rem;
+    height: 30rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 90%;
@@ -772,13 +782,13 @@ html, body {
     min-width: 12rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #Projetos .miniContainer-projetos #bnt-projetos {
     display: none;
   }
 }
-@media (min-width: 420px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .container {
     flex-direction: column;
   }
@@ -860,7 +870,8 @@ html, body {
     margin: 0;
   }
   .header {
-    min-height: 50vh;
+    margin: 0;
+    min-height: 30vh;
     background-size: 100% auto;
     justify-content: start;
   }
@@ -900,7 +911,7 @@ html, body {
     margin: 0 0 0 12rem;
   }
   .section-Sobremim {
-    height: 85rem;
+    height: 70rem;
     margin: 0;
   }
   .section-Sobremim h1 {
@@ -1070,12 +1081,15 @@ html, body {
     grid-column: 1/2;
     grid-row: 7/8;
   }
+  #Projetos {
+    margin: 0 0 15rem 0;
+  }
   #Projetos .título-projetos {
     text-shadow: 0 0 1rem #006eff;
   }
   #Projetos .miniContainer-projetos {
     min-width: 23rem;
-    height: 27rem;
+    height: 38rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 90%;
@@ -1084,15 +1098,22 @@ html, body {
     display: flex;
     min-width: 13rem;
   }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
+    height: 80%;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
+    height: 100%;
+  }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #Projetos .miniContainer-projetos #bnt-projetos {
     display: none;
   }
 }
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
   .header {
+    margin: 0;
     min-height: 50vh;
     background-size: 100% auto;
     justify-content: start;
@@ -1283,7 +1304,7 @@ html, body {
   }
   #Projetos .miniContainer-projetos {
     min-width: 80%;
-    height: 30rem;
+    height: 37rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 60%;
@@ -1291,9 +1312,15 @@ html, body {
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     min-width: 13rem;
   }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
+    height: 75%;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
+    height: 100%;
+  }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
     height: 35%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content #sem-projetos {
     display: flex;
@@ -1302,9 +1329,9 @@ html, body {
     display: none;
   }
 }
-@media (min-width: 900px) and (max-width: 1100px) {
+@media (min-width: 901px) and (max-width: 1100px) {
   .header {
-    min-height: 60vh;
+    min-height: 50vh;
     background-size: 100% auto;
     justify-content: start;
   }
@@ -1344,7 +1371,7 @@ html, body {
     margin: 1rem 0 0 22.5rem;
   }
   .section-Sobremim {
-    height: 85rem;
+    height: 75rem;
     margin: 0;
   }
   .section-Sobremim .content-Sobremim {
@@ -1579,9 +1606,11 @@ html, body {
     grid-column: 2/3;
     grid-row: 4/5;
   }
+  #Projetos {
+    margin: 4rem 0 15rem 0;
+  }
   #Projetos .miniContainer-projetos {
     min-width: 50rem;
-    height: 40rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: repeat(2, 40%);
@@ -1589,8 +1618,14 @@ html, body {
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     min-width: 13rem;
   }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
+    height: 75%;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
+    height: 100%;
+  }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #Projetos .project3 {
     grid-column: 1/2;
@@ -1605,10 +1640,10 @@ html, body {
     height: 40rem;
   }
 }
-@media (min-width: 1100px) and (max-width: 1300px) {
+@media (min-width: 1101px) and (max-width: 1300px) {
   .header {
     display: flex;
-    min-height: 90vh;
+    min-height: 70vh;
     background-size: 100% auto;
     justify-content: start;
   }
@@ -1648,7 +1683,7 @@ html, body {
     margin: 2rem 0 0 22rem;
   }
   .section-Sobremim {
-    height: 85rem;
+    height: 75rem;
     margin: 0;
   }
   .section-Sobremim .content-Sobremim {
@@ -1789,34 +1824,44 @@ html, body {
     grid-row: 3/4;
   }
   #Projetos {
-    min-width: 60rem;
-    height: 40rem;
+    margin: 2rem 0 15rem 0;
   }
-  #Projetos .projetos-Content {
+  #Projetos .miniContainer-projetos {
+    min-width: 60rem;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content {
     width: 100%;
     grid-template-columns: repeat(2, 40%);
   }
-  #Projetos .cards-projetos {
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     justify-content: center;
-    min-width: 13rem;
   }
-  #Projetos .cards-projetos .txt-Projetos {
-    font-size: 0.7rem;
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .card-alingImg {
+    height: 80%;
   }
-  #Projetos .project3 {
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
+    height: 80%;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
+    height: 100%;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
+    font-size: 0.9rem;
+  }
+  #Projetos .miniContainer-projetos .projetos-Content .project3 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  #Projetos .project4 {
+  #Projetos .miniContainer-projetos .projetos-Content .project4 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .mais-projetos {
-    height: 70rem;
+  #Projetos .mais-projetos {
+    min-width: 60rem;
     transition: 0.3s;
   }
 }
-@media (min-width: 1300px) and (max-width: 1600px) {
+@media (min-width: 1301px) and (max-width: 1600px) {
   .header {
     display: flex;
     justify-content: flex-start;
@@ -1987,9 +2032,11 @@ html, body {
     grid-column: 3/4;
     grid-row: 3/4;
   }
+  .section-projetos {
+    margin: 4rem 0 15rem 0;
+  }
   .section-projetos .miniContainer-projetos {
     width: 80%;
-    height: 26rem;
   }
   .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     min-width: 13rem;
@@ -2000,7 +2047,6 @@ html, body {
     font-size: 1rem;
   }
   .section-projetos .mais-projetos {
-    height: 47rem;
     transition: 0.3s;
   }
 }

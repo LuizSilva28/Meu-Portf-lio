@@ -165,6 +165,7 @@ html,body {
 }
 
 .mainContent{
+  width: 100%;
   margin-left: 3rem;
 }
 
@@ -464,9 +465,7 @@ html,body {
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    height: 100%;
-    //flex-grow: 1;
-    //flex-shrink: 1;
+    height: auto;
     padding:  1rem ;
     border: 2px solid #0d6dde;
     border-radius: 20px;
@@ -485,16 +484,21 @@ html,body {
         display: flex;
         flex-direction: column;
         min-width: 13rem;
-        min-height: auto;
+        max-height: 15rem;
         border: 2px solid #0d6dde;
         border-radius: 15px;
- 
-        .card-alingImg{
-          border-radius: 15px 15px 0px 0px ;
-          margin: 0px;
-          width: 100%;
-          //flex: 1;
-          object-fit: cover;
+        
+        a{
+          height: 70%;
+
+
+          .card-alingImg{
+            border-radius: 14px 14px 0px 0px ;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
 
         .txt-Projetos{
@@ -505,13 +509,16 @@ html,body {
           margin: 0 ;
           padding: 0 0 .2rem 1.2rem;
           height: 35%;
-          color: #fff;
+          color: #ffffff;
           border-top: 2px solid #0d6dde;
           background-color: transparent;
           border-radius: 0px 0px 11px 11px  ;
         }
       }
 
+      #sem-projetos{
+        display: none;
+      }
     }
 
     #bnt-projetos{
@@ -522,36 +529,35 @@ html,body {
       transition: .3s;
 
       .icon-project{
+        
         margin: 0px auto 0px auto;
         transition: .3s;
       }
-
     }
-
-    
-    #sem-projetos{
-        display: none;
-    }
-    }
-
+  }
   .mais-projetos{
-    
+    height: auto;
     transition: .3s;  
-  }
 
-  .mais-projetos #sem-projetos{
-    display: flex;
-  }
+    .projetos-Content{ 
+      margin: 1rem;
+      #sem-projetos{
+        display: flex;
+      }
+    }
 
-  .mais-projetos .bnt-projetos{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px auto 10px 0px;
-  }
-
-  .mais-projetos .icon-project {
-    transform: rotate(-180deg);
-    margin: 0px auto 0px auto;
+    #bnt-projetos{
+      display: flex;
+      justify-content: flex-end;
+      margin: 1rem auto 0rem auto;
+    
+      .icon-project {
+        transform: rotate(-180deg);
+        margin: 0px auto 0px auto;
+        transition: .3s;
+      }
+    }
+    
   }
 }
 
@@ -957,7 +963,7 @@ html,body {
 
     .miniContainer-projetos{
       min-width: 15rem;
-      height: 23rem;
+      height: 30rem;
     
       .projetos-Content{
         grid-template-columns: 90%;
@@ -967,7 +973,7 @@ html,body {
           min-width: 12rem;
 
           .txt-Projetos{
-            font-size: 0.8rem;
+            font-size: 0.9rem;
           }
           
         } 
@@ -986,7 +992,7 @@ html,body {
 
 // Estilos para telas entre 420px e 600px
 
-@media (min-width:420px) and (max-width:600px) {
+@media (min-width:421px) and (max-width:600px) {
   
   .container{
     flex-direction: column;
@@ -1098,8 +1104,8 @@ html,body {
   // HEADER // HEADER // HEADER // HEADER // HEADER // HEADER 
 
   .header {
-    
-    min-height: 50vh;
+    margin: 0;
+    min-height: 30vh;
     background-size: 100% auto;
     justify-content: start;
   
@@ -1155,7 +1161,7 @@ html,body {
   //SOBRE MIM //SOBRE MIM //SOBRE MIM //SOBRE MIM //SOBRE MIM 
     
   .section-Sobremim{
-    height: 85rem;
+    height: 70rem;
     margin: 0;
     
     h1{
@@ -1364,13 +1370,14 @@ html,body {
   // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
 
   #Projetos{
-    
+    margin: 0 0 15rem 0;
+
     .título-projetos{
       text-shadow: 0 0 1rem #006eff;
     }
     .miniContainer-projetos{
       min-width: 23rem;
-      height: 27rem;
+      height: 38rem;
     
       .projetos-Content{
         grid-template-columns: 90%;
@@ -1379,13 +1386,19 @@ html,body {
           display: flex;
           min-width: 13rem;
 
+          a{
+            height: 80%;
+
+            .card-alingImg{
+              height: 100%;
+            }
+          }
+
           .txt-Projetos{
-            font-size: .8rem
+            font-size: .9rem
           }
           
         } 
-
-
       }
       #bnt-projetos{
         display: none;
@@ -1398,12 +1411,12 @@ html,body {
 
   // PARA TELAS ENTRE 600PX E 900PX
  
-@media (min-width:600px) and ( max-width:900px){
+@media (min-width:601px) and ( max-width:900px){
 
    // HEADER HEADER HEADER HEADER HEADER HEADER
 
   .header {
-    
+    margin:  0;
     min-height: 50vh;
     background-size: 100% auto;
     justify-content: start;
@@ -1644,7 +1657,7 @@ html,body {
       
     .miniContainer-projetos{
       min-width: 80%;
-      height: 30rem;
+      height: 37rem;
     
       .projetos-Content{
         grid-template-columns:  60%;
@@ -1652,10 +1665,17 @@ html,body {
         .cards-projetos{
           min-width: 13rem;
           
+          a{
+            height: 75%;
+
+            .card-alingImg{
+              height: 100%;
+            }
+          }
 
           .txt-Projetos{
             height: 35%;
-            font-size: .8rem
+            font-size: .9rem
           }
         } 
         #sem-projetos{
@@ -1675,13 +1695,13 @@ html,body {
 }  
   // PARA TELAS ENTRE 900PX e 1100PX
 
-  @media (min-width:900px) and ( max-width:1100px){
+  @media (min-width:901px) and ( max-width:1100px){
  
     // HEADER HEADER HEADER HEADER HEADER HEADER
 
     .header {
     
-      min-height: 60vh;
+      min-height: 50vh;
       background-size: 100% auto;
       justify-content: start;
     
@@ -1736,7 +1756,7 @@ html,body {
       
   
     .section-Sobremim{
-      height: 85rem;
+      height: 75rem;
       margin: 0;
     
         .content-Sobremim{
@@ -2030,10 +2050,11 @@ html,body {
      // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
   
     #Projetos{
+      margin: 4rem 0 15rem 0;
       
       .miniContainer-projetos{
         min-width: 50rem;
-        height: 40rem;
+        
       
         .projetos-Content{
           grid-template-columns: repeat(2, 40%);
@@ -2041,8 +2062,16 @@ html,body {
           .cards-projetos{
             min-width: 13rem;
 
+            a{
+              height: 75%;
+  
+              .card-alingImg{
+                height: 100%;
+              }
+            }
+
             .txt-Projetos{
-              font-size: .8rem
+              font-size: .9rem
             }
           } 
         }
@@ -2067,14 +2096,14 @@ html,body {
 }
   // PARA TELAS ENTRE 1100PX e 1300PX
 
-@media (min-width:1100px) and ( max-width:1300px){
+@media (min-width:1101px) and ( max-width:1300px){
 
 
     // HEADER HEADER HEADER HEADER HEADER HEADER
 
   .header {
     display: flex;
-    min-height: 90vh;
+    min-height: 70vh;
     background-size: 100% auto ;
     justify-content: start;
   
@@ -2105,6 +2134,7 @@ html,body {
       flex-direction: column;
       align-items: center;
 
+
       .text-frase {
         font-size: 1.3rem;
         margin: .5rem 0 .5rem 0;
@@ -2129,7 +2159,7 @@ html,body {
     
   
   .section-Sobremim{
-    height: 85rem;
+    height: 75rem;
     margin: 0;
   
       .content-Sobremim{
@@ -2305,47 +2335,55 @@ html,body {
    // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
 
   #Projetos{
+    margin: 2rem 0 15rem 0;
 
-    min-width: 60rem;
-    height: 40rem;
+    .miniContainer-projetos{
+      min-width: 60rem;
     
-    
-    .projetos-Content{
-      width: 100%;
-      grid-template-columns: repeat(2, 40%);
+      .projetos-Content{
+        width: 100%;
+        grid-template-columns: repeat(2, 40%);     
       
-    }
+        .cards-projetos{
+          justify-content: center;
 
-    .cards-projetos{
-      justify-content: center;
-      min-width: 13rem;
-      
-      .txt-Projetos{
-        font-size: .7rem
+          .card-alingImg{
+            height: 80%;
+          }
+
+          a{
+            height: 80%;
+
+            .card-alingImg{
+              height: 100%;
+            }
+          }
+        
+          .txt-Projetos{
+            font-size: .9rem
+          }
+        } 
+    
+        .project3 {
+          grid-column: 1/2 ;
+          grid-row: 2/3 ;
+        }
+        .project4 {
+          grid-column: 2/3 ;
+          grid-row: 2/3 ;
+        }
       }
-      
-    } 
-    
-    .project3 {
-      grid-column: 1/2 ;
-      grid-row: 2/3 ;
     }
-    .project4 {
-      grid-column: 2/3 ;
-      grid-row: 2/3 ;
-    }
-    
-    
-  }
-  .mais-projetos {
-      height: 70rem;
+    .mais-projetos {
+      min-width: 60rem;
       transition: 0.3s;
-      
+    }
   }
+  
 }
 // PARA TELAS ENTRE 1300PX E 1600PX
 
-@media (min-width:1300px) and ( max-width:1600px){
+@media (min-width:1301px) and ( max-width:1600px){
 
   
   .header {
@@ -2568,11 +2606,12 @@ html,body {
   }
   // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
   .section-projetos{
+    margin: 4rem 0 15rem 0;
 
     .miniContainer-projetos {
   
       width: 80%;
-      height: 26rem;
+      //height: auto;
 
       .projetos-Content{
 
@@ -2589,7 +2628,7 @@ html,body {
       }
     }
     .mais-projetos {
-        height: 47rem;
+        
         transition: 0.3s;
     } 
   }
