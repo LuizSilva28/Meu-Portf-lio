@@ -481,6 +481,7 @@ body {
     border-bottom: 2px solid #0d6dde;
     border-radius: 20px;
     box-shadow: 2px 3px 30px #000;
+    transition: .3s;
 
 
     .projetos-Content {
@@ -489,7 +490,7 @@ body {
       margin: 3rem 0 0 0;
       gap: 4rem 2rem;
       justify-content: center;
-      overflow-x: hidden;
+      //overflow-x: hidden;
 
       .cards-projetos {
         display: flex;
@@ -524,6 +525,7 @@ body {
           border-top: 2px solid #0d6dde;
           background-color: transparent;
           border-radius: 0px 0px 11px 11px;
+          list-style-type: none;
         }
       }
 
@@ -542,14 +544,14 @@ body {
       .icon-project {
 
         margin: 0px auto 0px auto;
-        transition: .3s;
+
       }
     }
   }
 
   .mais-projetos {
     height: auto;
-    transition: .3s;
+
 
     .projetos-Content {
       margin: 1rem;
@@ -989,6 +991,7 @@ body {
   #Projetos {
     margin: 2rem 0 10rem 0;
 
+
     .título-projetos {
       font-size: 1rem;
       margin: 1rem 0 1rem 0;
@@ -998,6 +1001,8 @@ body {
     .miniContainer-projetos {
       min-width: 15rem;
       height: 30rem;
+      overflow-x: hidden;
+
 
       .projetos-Content {
         grid-template-columns: 90%;
@@ -1433,6 +1438,7 @@ body {
     .miniContainer-projetos {
       min-width: 23rem;
       height: 38rem;
+      overflow-x: hidden;
 
       .projetos-Content {
         grid-template-columns: 90%;
@@ -1730,18 +1736,27 @@ body {
     .miniContainer-projetos {
       min-width: 80%;
       height: 37rem;
+      overflow-x: hidden;
+
+
 
       .projetos-Content {
-        grid-template-columns: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
 
         .cards-projetos {
-          min-width: 13rem;
+          min-width: 23rem;
+
 
           a {
-            height: 75%;
+            height: 80%;
+
 
             .card-alingImg {
               height: 100%;
+              object-fit: cover;
             }
           }
 
@@ -2159,7 +2174,7 @@ body {
 
 
       .projetos-Content {
-        grid-template-columns: repeat(2, 40%);
+        grid-template-columns: repeat(2, 50%);
 
         .cards-projetos {
           min-width: 13rem;

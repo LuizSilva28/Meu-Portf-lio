@@ -385,6 +385,7 @@ body {
   border-bottom: 2px solid #0d6dde;
   border-radius: 20px;
   box-shadow: 2px 3px 30px #000;
+  transition: 0.3s;
 }
 .section-projetos .miniContainer-projetos .projetos-Content {
   display: grid;
@@ -392,7 +393,6 @@ body {
   margin: 3rem 0 0 0;
   gap: 4rem 2rem;
   justify-content: center;
-  overflow-x: hidden;
 }
 .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos {
   display: flex;
@@ -424,6 +424,7 @@ body {
   border-top: 2px solid #0d6dde;
   background-color: transparent;
   border-radius: 0px 0px 11px 11px;
+  list-style-type: none;
 }
 .section-projetos .miniContainer-projetos .projetos-Content #sem-projetos {
   display: none;
@@ -437,11 +438,9 @@ body {
 }
 .section-projetos .miniContainer-projetos #bnt-projetos .icon-project {
   margin: 0px auto 0px auto;
-  transition: 0.3s;
 }
 .section-projetos .mais-projetos {
   height: auto;
-  transition: 0.3s;
 }
 .section-projetos .mais-projetos .projetos-Content {
   margin: 1rem;
@@ -775,6 +774,7 @@ body {
   #Projetos .miniContainer-projetos {
     min-width: 15rem;
     height: 30rem;
+    overflow-x: hidden;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 90%;
@@ -1091,6 +1091,7 @@ body {
   #Projetos .miniContainer-projetos {
     min-width: 23rem;
     height: 38rem;
+    overflow-x: hidden;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 90%;
@@ -1305,18 +1306,23 @@ body {
   #Projetos .miniContainer-projetos {
     min-width: 80%;
     height: 37rem;
+    overflow-x: hidden;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
-    grid-template-columns: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
-    min-width: 13rem;
+    min-width: 23rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
-    height: 75%;
+    height: 80%;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
     height: 100%;
+    object-fit: cover;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
     height: 35%;
@@ -1612,7 +1618,7 @@ body {
     min-width: 50rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, 50%);
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     min-width: 13rem;
