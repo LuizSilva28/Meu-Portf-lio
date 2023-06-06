@@ -6,7 +6,8 @@
   background-color: transparent;
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   background: linear-gradient(135deg, rgb(11, 18, 20), rgba(11, 18, 20, 0.7)), linear-gradient(290deg, rgba(7, 55, 158, 0.9) 100%, rgba(7, 55, 158, 0.9) 100%);
@@ -203,7 +204,8 @@ html, body {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.2);
-  border: 2px solid #0d6dde;
+  border-top: 2px solid #0d6dde;
+  border-bottom: 2px solid #0d6dde;
   border-radius: 2rem;
   height: 40rem;
   width: 70rem;
@@ -379,9 +381,10 @@ html, body {
   width: 80%;
   height: auto;
   padding: 1rem;
-  border: 2px solid #0d6dde;
+  border-top: 2px solid #0d6dde;
+  border-bottom: 2px solid #0d6dde;
   border-radius: 20px;
-  box-shadow: inset 3px 3px 10px #0d6dde, 4px 4px 8px #000;
+  box-shadow: 2px 3px 30px #000;
 }
 .section-projetos .miniContainer-projetos .projetos-Content {
   display: grid;
@@ -600,7 +603,6 @@ html, body {
     padding: 10px;
     width: 85%;
     height: auto;
-    box-shadow: inset 0px 0px 10px 1px #0d6dde;
   }
   .section-Sobremim .content-Sobremim .txt-sobremim {
     display: flex;
@@ -923,7 +925,6 @@ html, body {
     padding: 10px;
     width: 80%;
     height: auto;
-    box-shadow: inset 0px 0px 10px 1px #0d6dde;
   }
   .section-Sobremim .content-Sobremim .txt-sobremim {
     display: flex;
@@ -1163,7 +1164,6 @@ html, body {
     padding: 10px;
     width: 80%;
     height: auto;
-    box-shadow: inset 0px 0px 10px 1px #0d6dde;
   }
   .section-Sobremim .content-Sobremim .txt-sobremim {
     display: flex;
@@ -1380,7 +1380,6 @@ html, body {
     padding: 10px;
     width: 80%;
     height: auto;
-    box-shadow: inset 0px 0px 10px 1px #0d6dde;
   }
   .section-Sobremim .content-Sobremim .txt-sobremim {
     display: flex;
@@ -1692,7 +1691,6 @@ html, body {
     padding: 10px;
     width: 80%;
     height: auto;
-    box-shadow: inset 0px 0px 10px 1px #0d6dde;
   }
   .section-Sobremim .content-Sobremim .txt-sobremim {
     display: flex;
@@ -1834,13 +1832,10 @@ html, body {
     grid-template-columns: repeat(2, 40%);
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
-    justify-content: center;
-  }
-  #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .card-alingImg {
-    height: 80%;
+    min-width: 13rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
-    height: 80%;
+    height: 75%;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
     height: 100%;
@@ -1902,7 +1897,6 @@ html, body {
     padding: 10px;
     width: 90%;
     height: auto;
-    box-shadow: inset 0px 0px 10px 1px #0d6dde;
     overflow: hidden;
   }
   .section-Sobremim .content-Sobremim .txt-sobremim {
