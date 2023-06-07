@@ -1648,7 +1648,7 @@ body {
   }
   #Projetos .mais-projetos {
     min-width: 50rem;
-    height: 40rem;
+    height: auto;
   }
 }
 @media (min-width: 1101px) and (max-width: 1300px) {
