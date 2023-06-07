@@ -55,10 +55,10 @@ body {
     bottom: 0;
   }
 
-  nav.navBar #bntMenu {
+  #bntMenu {
     display: flex;
 
-    margin: 10px auto 10px auto;
+    margin: 10px auto 100px auto;
   }
 
   .icon {
@@ -126,6 +126,11 @@ body {
     transform: rotate(0deg);
     margin: 0px;
     transition: 0.3s;
+  }
+
+  .asideAling {
+    overflow-x: hidden;
+    margin-bottom: 20rem;
   }
 
   a {
@@ -1748,6 +1753,7 @@ body {
 
         .cards-projetos {
           min-width: 23rem;
+          min-height: 20rem;
 
 
           a {

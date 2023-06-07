@@ -43,9 +43,9 @@ body {
   left: 0;
   bottom: 0;
 }
-.oculto nav.navBar #bntMenu {
+.oculto #bntMenu {
   display: flex;
-  margin: 10px auto 10px auto;
+  margin: 10px auto 100px auto;
 }
 .oculto .icon {
   transform: rotate(-180deg);
@@ -93,6 +93,10 @@ body {
   transform: rotate(0deg);
   margin: 0px;
   transition: 0.3s;
+}
+.asideBar .asideAling {
+  overflow-x: hidden;
+  margin-bottom: 20rem;
 }
 .asideBar a {
   text-decoration: none;
@@ -1316,6 +1320,7 @@ body {
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     min-width: 23rem;
+    min-height: 20rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
     height: 80%;
