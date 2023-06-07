@@ -1,0 +1,43 @@
+.container1 {
+  color: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url(../imagens/Meow\ meow.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.container1 {
+  background-color: rgba(19, 18, 18, 0.8);
+  max-width: 28.1rem;
+  height: auto;
+}
+.container1 .img1 {
+  width: 6rem;
+}
+
+.catSpace {
+  color: rgba(253, 250, 33, 0.9450980392);
+}
+
+.bnt-Enviar {
+  color: rgba(253, 250, 33, 0.9450980392);
+  border: 1px solid rgba(253, 250, 33, 0.9450980392);
+}
+.bnt-Enviar:hover {
+  background-color: rgba(253, 250, 33, 0.9450980392);
+}
+
+.fotter {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
