@@ -1,0 +1,44 @@
+@import "./colors.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+
+  background-image: url(../imagens/Meow\ meow.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+
+.container1 {
+  background-color: $background-color ;
+  max-width: 28.1rem;
+  height: auto;
+
+  .img1 {
+
+    width: 6rem;
+  }
+}
+
+.catSpace {
+  color: $buttom-color;
+}
+
+.bnt-Enviar {
+  color: $buttom-color;
+  border: 1px solid $buttom-color;
+
+  &:hover {
+    background-color: $buttom-color;
+  }
+}
+
+.fotter {
+  color: $text-colors;
+}
