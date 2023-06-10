@@ -12,6 +12,30 @@ body {
   margin: 0;
   background: linear-gradient(135deg, rgb(11, 18, 20), rgba(11, 18, 20, 0.7)), linear-gradient(290deg, rgba(7, 55, 158, 0.9) 100%, rgba(7, 55, 158, 0.9) 100%);
   scroll-behavior: smooth;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: rgb(11, 18, 36);
+}
+html ::-webkit-scrollbar-track,
+body ::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 5px rgba(13, 109, 222, 0.5);
+}
+html ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb {
+  background: #0b1224;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #006eff;
+}
+html ::-webkit-scrollbar-thumb:hover,
+body ::-webkit-scrollbar-thumb:hover {
+  background: #006eff;
+  box-shadow: inset 0 0 5px #0b1224;
 }
 
 .container {
@@ -788,7 +812,7 @@ body {
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 90%;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     display: flex;
@@ -1102,7 +1126,7 @@ body {
   #Projetos .miniContainer-projetos {
     min-width: 25rem;
     height: 38rem;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 100%;
@@ -1323,7 +1347,7 @@ body {
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     display: flex;
