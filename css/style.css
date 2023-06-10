@@ -44,6 +44,7 @@ body {
   bottom: 0;
 }
 .oculto #bntMenu {
+  cursor: pointer;
   display: flex;
   margin: 10px auto 100px auto;
 }
@@ -476,7 +477,7 @@ body {
   }
   .oculto {
     margin-top: 1rem;
-    width: 1.5rem;
+    width: 2rem;
     border-radius: 0 0.4rem 0.4rem 0;
     flex-grow: 1;
     height: 3.5rem;
@@ -500,9 +501,10 @@ body {
   }
   .oculto .navBar .asideAling {
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .oculto .navBar .asideAling .txtAling {
+    display: none;
     transition: 0.3s;
   }
   .oculto .navBar .contact-icons {
@@ -522,7 +524,7 @@ body {
   .asideBar .navBar {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .asideBar .navBar #bntMenu .icon {
@@ -533,6 +535,7 @@ body {
     transition: 0.3s;
   }
   .asideBar .navBar .asideAling {
+    margin: 1rem 1rem 1rem 1rem;
     flex-wrap: wrap;
   }
   .asideBar .navBar .asideAling .txtAling {
@@ -781,10 +784,11 @@ body {
   #Projetos .miniContainer-projetos {
     min-width: 15rem;
     height: 30rem;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 90%;
+    overflow: scroll;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     display: flex;
@@ -812,22 +816,21 @@ body {
   .oculto .navBar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     overflow: hidden;
   }
   .oculto .navBar #bntMenu {
     display: flex;
-    margin: 10px;
+    margin: auto;
   }
   .oculto .navBar #bntMenu .icon {
-    transform: rotate(-90deg);
-    margin: auto 0px auto 0;
+    transform: rotate(180deg);
     transition: 0.3s;
   }
   .oculto .navBar .asideAling {
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .oculto .navBar .asideAling .txtAling {
     transition: 0.3s;
@@ -849,7 +852,7 @@ body {
   .asideBar .navBar {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .asideBar .navBar #bntMenu .icon {
@@ -860,6 +863,7 @@ body {
     transition: 0.3s;
   }
   .asideBar .navBar .asideAling {
+    margin: 1rem;
     flex-wrap: wrap;
   }
   .asideBar .navBar .asideAling .txtAling {
@@ -1096,13 +1100,14 @@ body {
     text-shadow: 0 0 1rem #006eff;
   }
   #Projetos .miniContainer-projetos {
-    min-width: 23rem;
+    min-width: 25rem;
     height: 38rem;
     overflow-x: hidden;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
-    grid-template-columns: 90%;
-    overflow: scroll;
+    grid-template-columns: 100%;
+    padding: 0.5rem;
+    overflow-y: scroll;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     display: flex;
