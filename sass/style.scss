@@ -68,7 +68,7 @@ body {
   }
 
   .asideAling {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .txtAling {
@@ -129,7 +129,7 @@ body {
   }
 
   .asideAling {
-    overflow-x: hidden;
+    overflow: hidden;
     margin-bottom: 20rem;
   }
 
@@ -207,6 +207,7 @@ body {
     img {
       border-radius: 30%;
       box-shadow: inset 0 0 1em, 0 0 1em #0b1224;
+      object-fit: cover;
       width: 19rem;
       height: 19rem;
     }
@@ -462,7 +463,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 12rem 0 20rem 0;
+  margin: 2rem 0 20rem 0;
 
 
 
@@ -479,14 +480,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: auto;
+    max-width: 80rem;
+    height: 30rem;
     padding: 1rem;
     border-top: 2px solid #0d6dde;
     border-bottom: 2px solid #0d6dde;
     border-radius: 20px;
     box-shadow: 2px 3px 30px #000;
-    transition: .3s;
+    transition: height 0.3s ease;
 
 
     .projetos-Content {
@@ -497,12 +498,12 @@ body {
       gap: 4rem 2rem;
 
       justify-content: center;
-      //overflow-x: hidden;
+      overflow: hidden;
 
       .cards-projetos {
         display: flex;
         flex-direction: column;
-        min-width: 13rem;
+        max-width: 18rem;
         max-height: auto;
         border: 2px solid #0d6dde;
         border-radius: 15px;
@@ -558,7 +559,8 @@ body {
   }
 
   .mais-projetos {
-    height: auto;
+    height: 47rem;
+
 
 
     .projetos-Content {
@@ -1450,6 +1452,7 @@ body {
 
       .projetos-Content {
         grid-template-columns: 90%;
+        overflow: scroll;
 
         .cards-projetos {
           display: flex;
@@ -1742,41 +1745,30 @@ body {
   #Projetos {
 
     .miniContainer-projetos {
-      min-width: 80%;
-      height: 37rem;
-      overflow-x: hidden;
-
-
+      min-width: 28rem;
+      height: 40rem;
+      overflow: hidden;
 
       .projetos-Content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 70%;
+        grid-template-columns: 100%;
+        overflow: scroll;
 
         .cards-projetos {
-          min-width: 23rem;
-          min-height: 20rem;
-
+          display: flex;
+          min-width: 22rem;
 
           a {
             height: 80%;
 
-
             .card-alingImg {
               height: 100%;
-              object-fit: cover;
             }
           }
 
           .txt-Projetos {
-            height: 35%;
             font-size: .9rem
           }
-        }
 
-        #sem-projetos {
-          display: flex;
         }
       }
 
@@ -1784,8 +1776,6 @@ body {
         display: none;
       }
     }
-
-
 
 
   }
@@ -1956,713 +1946,744 @@ body {
 
 
     }
-
-    // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS 
-
-
-    #Softskills {
-      display: grid;
-      gap: .2rem;
-      grid-template-columns: repeat(2, calc(100% / 2));
-
-      .text-softskill {
-        margin: 0;
-      }
-
-      .cards-soft {
-        height: 180px;
-
-        .card-soft {
-          height: 80px;
-          margin-top: 10px;
-        }
-      }
-
-      .text-softskill {
-        grid-column: 1/3;
-      }
-
-      .card3 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      .card4 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
-
-      .card5 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-      }
-
-      .card6 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-      }
-    }
-
-    //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS 
-
-    #Hardskills {
-      display: grid;
-      gap: .2rem;
-      grid-template-columns: repeat(2, calc(100% / 2));
-
-      .text-hardskill {
-        margin: 0;
-      }
-
-      .cards-hard {
-        height: 180px;
-
-        .card-hard {
-          height: 80px;
-          margin-top: 10px;
-        }
-      }
-
-
-      .text-hardskill {
-        grid-column: 1/3;
-      }
-
-      .card-3 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      .card-4 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
-
-      .card-5 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-      }
-
-      .card-6 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-      }
-    }
-
-    // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
-
-    #Projetos {
-      margin: 4rem 0 15rem 0;
-
-      .miniContainer-projetos {
-        min-width: 50rem;
-
-
-        .projetos-Content {
-          grid-template-columns: repeat(2, 45%);
-
-          .cards-projetos {
-            min-width: 13rem;
-
-            a {
-              height: 75%;
-
-              .card-alingImg {
-                height: 100%;
-              }
-            }
-
-            .txt-Projetos {
-              font-size: .9rem
-            }
-          }
-        }
-      }
-
-      .project3 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-      }
-
-      .project4 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-      }
-
-      .mais-projetos {
-        min-width: 50rem;
-        height: auto;
-        //transition: 0.3s;
-      }
-    }
-
-
   }
 
-  // PARA TELAS ENTRE 1100PX e 1300PX
-
-  @media (min-width:1101px) and (max-width:1300px) {
+  // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS 
 
 
-    // HEADER HEADER HEADER HEADER HEADER HEADER
+  #Softskills {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(2, calc(100% / 2));
 
-    .header {
-      display: flex;
-      min-height: 70vh;
-      background-size: 100% auto;
-      justify-content: start;
-
-
-      .bemVindo-Aling {
-        padding: 4rem 2rem 1rem 2rem;
-
-        .text-welcome {
-          font-size: 2rem;
-          margin: .7rem;
-        }
-      }
-
-
-      .perfil-Aling {
-        justify-content: center;
-        margin: 2rem 0 2rem 0;
-      }
-
-      .perfil-Aling img {
-        border-radius: 30%;
-        width: 200px;
-        height: 200px;
-      }
-
-      .frase-Aling {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-        .text-frase {
-          font-size: 1.3rem;
-          margin: .5rem 0 .5rem 0;
-        }
-      }
-
-      #autor-Aling {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .autor-text {
-          padding: 0;
-          font-size: 1rem;
-          margin: 2rem 0 0 22rem;
-        }
-      }
-
-
-    }
-
-    // SOBREM MIM SOBREM MIM SOBREM MIM SOBREM MIM 
-
-
-    .section-Sobremim {
-      height: 75rem;
+    .text-softskill {
       margin: 0;
+    }
 
-      .content-Sobremim {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        width: 80%;
-        height: auto;
+    .cards-soft {
+      height: 180px;
 
-
-        .txt-sobremim {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 10px;
-          padding: 10px;
-          flex-wrap: wrap;
-
-
-          p {
-            position: relative;
-            margin: 2rem 2rem 2rem 4rem;
-            flex: 1;
-            width: 80%;
-          }
-
-          #img1 {
-            margin: 0;
-            box-shadow: 0 0 0.5em #000;
-          }
-        }
-
-        // CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSEL 
-
-        .wrapper {
-          display: flex;
-          justify-content: center;
-          width: 41rem;
-          position: relative;
-
-
-          i {
-            top: 50%;
-            height: 46px;
-            width: 46px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            position: absolute;
-            text-align: center;
-            line-height: 46px;
-            background: #fff;
-            border-radius: 50%;
-            transform: translateY(40%);
-          }
-
-          i:first-child {
-            left: -70px;
-            display: none;
-          }
-
-          i:last-child {
-            right: -50px;
-          }
-
-          .carousel {
-            overflow: hidden;
-            font-size: 0px;
-            cursor: pointer;
-            white-space: nowrap;
-            scroll-behavior: smooth;
-            width: 100%;
-            padding: 1rem;
-
-
-            .dragging {
-              cursor: grab;
-              scroll-behavior: auto;
-            }
-
-            .dragging img {
-              pointer-events: none;
-            }
-
-            img {
-              height: 19rem;
-              min-width: 19rem;
-              object-fit: cover;
-              margin-left: 1rem;
-              //width: calc(100% / 2);
-            }
-
-            img:first-child {
-              margin-left: 0px;
-            }
-          }
-        }
-
-
+      .card-soft {
+        height: 80px;
+        margin-top: 10px;
       }
     }
 
-    // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS 
-
-
-    #Softskills {
-      display: grid;
-      gap: .2rem;
-      grid-template-columns: repeat(3, calc(90% / 3));
-
-      .text-softskill {
-        margin: 0;
-      }
-
-      .cards-soft {
-        height: 180px;
-
-        .card-soft {
-          height: 80px;
-          margin-top: 10px;
-        }
-      }
-
-      .text-softskill {
-        grid-column: 1/4;
-      }
-
-      .card4 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      .card5 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
-
-      .card6 {
-        grid-column: 3/4;
-        grid-row: 3/4;
-      }
+    .text-softskill {
+      grid-column: 1/3;
     }
 
-    //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS 
-
-    #Hardskills {
-      display: grid;
-      gap: .2rem;
-      grid-template-columns: repeat(3, calc(90% / 3));
-
-      .text-hardskill {
-        margin: 0;
-      }
-
-      .cards-hard {
-        height: 180px;
-
-        .card-hard {
-          height: 80px;
-          margin-top: 10px;
-        }
-      }
-
-
-
-
-      .text-hardskill {
-        grid-column: 1/4;
-      }
-
-      .card-4 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      .card-5 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
-
-      .card-6 {
-        grid-column: 3/4;
-        grid-row: 3/4;
-      }
+    .card3 {
+      grid-column: 1/2;
+      grid-row: 3/4;
     }
 
-    // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
-
-    #Projetos {
-      margin: 2rem 0 15rem 0;
-
-      .miniContainer-projetos {
-        min-width: 60rem;
-
-        .projetos-Content {
-          width: 100%;
-          grid-template-columns: repeat(2, 40%);
-
-          .cards-projetos {
-            min-width: 13rem;
-
-            a {
-              height: 75%;
-
-              .card-alingImg {
-                height: 100%;
-              }
-            }
-
-            .txt-Projetos {
-              font-size: .9rem
-            }
-          }
-
-          .project3 {
-            grid-column: 1/2;
-            grid-row: 2/3;
-          }
-
-          .project4 {
-            grid-column: 2/3;
-            grid-row: 2/3;
-          }
-        }
-      }
-
-      .mais-projetos {
-        min-width: 60rem;
-        transition: 0.3s;
-      }
+    .card4 {
+      grid-column: 2/3;
+      grid-row: 3/4;
     }
 
+    .card5 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    .card6 {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
   }
 
-  // PARA TELAS ENTRE 1300PX E 1600PX
+  //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS 
 
-  @media (min-width:1301px) and (max-width:1600px) {
+  #Hardskills {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(2, calc(100% / 2));
+
+    .text-hardskill {
+      margin: 0;
+    }
+
+    .cards-hard {
+      height: 180px;
+
+      .card-hard {
+        height: 80px;
+        margin-top: 10px;
+      }
+    }
 
 
-    .header {
+    .text-hardskill {
+      grid-column: 1/3;
+    }
+
+    .card-3 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .card-4 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .card-5 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    .card-6 {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+  }
+
+  // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
+
+  #Projetos {
+    margin: 4rem 0 15rem 0;
+
+    .miniContainer-projetos {
+      min-width: 50rem;
+      height: 30rem;
+      transition: height .3s easy;
+
+
+      .projetos-Content {
+        grid-template-columns: repeat(2, 45%);
+
+        .cards-projetos {
+          min-width: 13rem;
+
+          a {
+            height: 75%;
+
+            .card-alingImg {
+              height: 100%;
+            }
+          }
+
+          .txt-Projetos {
+            font-size: .9rem
+          }
+        }
+
+        .project3,
+        .project4 {
+          display: none;
+        }
+
+      }
+    }
+
+
+
+    .mais-projetos {
+      min-width: 50rem;
+      height: 75rem;
+
+
+      .projetos-Content {
+
+        .project3 {
+          display: flex;
+          grid-column: 1/2;
+          grid-row: 2/3;
+        }
+
+        .project4 {
+          display: flex;
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+
+      }
+
+    }
+  }
+
+
+}
+
+
+// PARA TELAS ENTRE 1100PX e 1300PX
+
+@media (min-width:1101px) and (max-width:1300px) {
+
+
+  // HEADER HEADER HEADER HEADER HEADER HEADER
+
+  .header {
+    display: flex;
+    min-height: 70vh;
+    background-size: 100% auto;
+    justify-content: start;
+
+
+    .bemVindo-Aling {
+      padding: 4rem 2rem 1rem 2rem;
+
+      .text-welcome {
+        font-size: 2rem;
+        margin: .7rem;
+      }
+    }
+
+
+    .perfil-Aling {
+      justify-content: center;
+      margin: 2rem 0 2rem 0;
+    }
+
+    .perfil-Aling img {
+      border-radius: 30%;
+      width: 200px;
+      height: 200px;
+    }
+
+    .frase-Aling {
       display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      justify-content: flex-start;
-      background-size: 100% auto;
 
-      .bemVindo-Aling {
-        padding: 4rem 2rem 2rem 5rem;
-
-        .text-welcome {
-          margin: .5rem;
-        }
-
+      .text-frase {
+        font-size: 1.3rem;
+        margin: .5rem 0 .5rem 0;
       }
-
-      .perfil-Aling img {
-        border-radius: 30%;
-        margin-top: 4rem;
-        width: 16rem;
-        height: 16rem;
-
-      }
-
-      .frase-Aling {
-        margin-top: 4rem;
-
-        .text-frase {
-          margin: 0.5rem;
-        }
-
-      }
-
-      #autor-Aling {
-        margin-top: 4rem;
-
-        .autor-text {
-          padding: 0 5rem 0 0;
-          margin: 0 0 1rem 0;
-        }
-      }
-
     }
 
-    //SOBRE MIM //SOBRE MIM //SOBRE MIM //SOBRE MIM 
+    #autor-Aling {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    .section-Sobremim {
-      margin: auto auto 7rem auto;
-      width: 85%;
+      .autor-text {
+        padding: 0;
+        font-size: 1rem;
+        margin: 2rem 0 0 22rem;
+      }
+    }
 
-      .content-Sobremim {
+
+  }
+
+  // SOBREM MIM SOBREM MIM SOBREM MIM SOBREM MIM 
+
+
+  .section-Sobremim {
+    height: 75rem;
+    margin: 0;
+
+    .content-Sobremim {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      width: 80%;
+      height: auto;
+
+
+      .txt-sobremim {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        gap: 10px;
         padding: 10px;
-        width: 90%;
-        height: auto;
-
-        overflow: hidden;
-
-        .txt-sobremim {
-          display: flex;
-          justify-content: space-between;
-          gap: 10px;
-          padding: 10px;
-          //flex-wrap: wrap;
-
-          p {
-            position: relative;
-            margin: 2rem 2rem 2rem 4rem;
-            flex: 1;
-            width: 80%;
-          }
-
-          #img1 {
-            margin: 0;
-            box-shadow: 0 0 0.5em #000;
-          }
-        }
+        flex-wrap: wrap;
 
 
-        // CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSELCARROSSEL
-
-        .wrapper {
-          display: flex;
-          justify-content: center;
-          width: 41rem;
+        p {
           position: relative;
+          margin: 2rem 2rem 2rem 4rem;
+          flex: 1;
+          width: 80%;
+        }
+
+        #img1 {
+          margin: 0;
+          box-shadow: 0 0 0.5em #000;
+        }
+      }
+
+      // CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSEL 
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 41rem;
+        position: relative;
 
 
-          i {
-            top: 50%;
-            height: 46px;
-            width: 46px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            position: absolute;
-            text-align: center;
-            line-height: 46px;
-            background: #fff;
-            border-radius: 50%;
-            transform: translateY(40%);
+        i {
+          top: 50%;
+          height: 46px;
+          width: 46px;
+          cursor: pointer;
+          font-size: 1.2rem;
+          position: absolute;
+          text-align: center;
+          line-height: 46px;
+          background: #fff;
+          border-radius: 50%;
+          transform: translateY(40%);
+        }
+
+        i:first-child {
+          left: -70px;
+          display: none;
+        }
+
+        i:last-child {
+          right: -50px;
+        }
+
+        .carousel {
+          overflow: hidden;
+          font-size: 0px;
+          cursor: pointer;
+          white-space: nowrap;
+          scroll-behavior: smooth;
+          width: 100%;
+          padding: 1rem;
+
+
+          .dragging {
+            cursor: grab;
+            scroll-behavior: auto;
           }
 
-          i:first-child {
-            left: -70px;
-            display: none;
+          .dragging img {
+            pointer-events: none;
           }
 
-          i:last-child {
-            right: -50px;
+          img {
+            height: 19rem;
+            min-width: 19rem;
+            object-fit: cover;
+            margin-left: 1rem;
+            //width: calc(100% / 2);
           }
 
-          .carousel {
-            overflow: hidden;
-            font-size: 0px;
-            cursor: pointer;
-            white-space: nowrap;
-            scroll-behavior: smooth;
-            width: 100%;
-            padding: 1rem;
+          img:first-child {
+            margin-left: 0px;
+          }
+        }
+      }
 
 
-            .dragging {
-              cursor: grab;
-              scroll-behavior: auto;
-            }
+    }
+  }
 
-            .dragging img {
-              pointer-events: none;
-            }
+  // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS 
 
-            img {
-              height: 19rem;
-              min-width: 19rem;
-              object-fit: cover;
-              margin-left: 1rem;
-              //width: calc(100% / 2);
-            }
 
-            img:first-child {
-              margin-left: 0px;
+  #Softskills {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(3, calc(90% / 3));
+
+    .text-softskill {
+      margin: 0;
+    }
+
+    .cards-soft {
+      height: 180px;
+
+      .card-soft {
+        height: 80px;
+        margin-top: 10px;
+      }
+    }
+
+    .text-softskill {
+      grid-column: 1/4;
+    }
+
+    .card4 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .card5 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .card6 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+  }
+
+  //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS 
+
+  #Hardskills {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(3, calc(90% / 3));
+
+    .text-hardskill {
+      margin: 0;
+    }
+
+    .cards-hard {
+      height: 180px;
+
+      .card-hard {
+        height: 80px;
+        margin-top: 10px;
+      }
+    }
+
+
+
+
+    .text-hardskill {
+      grid-column: 1/4;
+    }
+
+    .card-4 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .card-5 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .card-6 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+  }
+
+  // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
+
+  #Projetos {
+    margin: 2rem 0 15rem 0;
+
+    .miniContainer-projetos {
+      min-width: 50rem;
+      height: 32rem;
+
+      .projetos-Content {
+        width: 100%;
+        grid-template-columns: repeat(2, 40%);
+
+        .cards-projetos {
+          min-width: 13rem;
+
+          a {
+            height: 75%;
+
+            .card-alingImg {
+              height: 100%;
             }
           }
+
+          .txt-Projetos {
+            font-size: .9rem
+          }
+        }
+
+        .project3,
+        .project4 {
+          display: none;
         }
       }
     }
 
-    // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS 
+    .mais-projetos {
+      min-width: 50rem;
+      height: 80rem;
+      transition: 0.3s;
 
+      .projetos-Content {
 
-    #Softskills {
-      display: grid;
-      gap: .2rem;
-      grid-template-columns: repeat(3, calc(90% / 3));
-
-      .text-softskill {
-        margin: 0;
-      }
-
-      .cards-soft {
-        height: 180px;
-
-        .card-soft {
-          height: 80px;
-          margin-top: 10px;
+        .project3 {
+          display: flex;
+          grid-column: 1/2;
+          grid-row: 2/3;
         }
-      }
 
-      .text-softskill {
-        grid-column: 1/4;
-      }
-
-      .card4 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      .card5 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
-
-      .card6 {
-        grid-column: 3/4;
-        grid-row: 3/4;
-      }
-    }
-
-
-
-    //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS 
-
-    #Hardskills {
-      display: grid;
-      gap: .2rem;
-      grid-template-columns: repeat(3, calc(90% / 3));
-
-      .text-hardskill {
-        margin: 0;
-      }
-
-      .cards-hard {
-        height: 180px;
-
-        .card-hard {
-          height: 80px;
-          margin-top: 10px;
+        .project4 {
+          display: flex;
+          grid-column: 2/3;
+          grid-row: 2/3;
         }
-      }
-
-
-
-
-      .text-hardskill {
-        grid-column: 1/4;
-      }
-
-      .card-4 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      .card-5 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-      }
-
-      .card-6 {
-        grid-column: 3/4;
-        grid-row: 3/4;
-      }
-    }
-
-    // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
-    .section-projetos {
-      margin: 4rem 0 15rem 0;
-
-      .miniContainer-projetos {
-
-        width: 80%;
-        //height: auto;
-
-        .projetos-Content {
-
-          .cards-projetos {
-            min-width: 13rem;
-
-            .txt-Projetos {
-              flex-direction: column;
-              align-items: flex-start;
-              font-size: 1rem;
-            }
-
-          }
-        }
-      }
-
-      .mais-projetos {
-
-        transition: 0.3s;
       }
     }
   }
+
+}
+
+// PARA TELAS ENTRE 1300PX E 1600PX
+
+@media (min-width:1301px) and (max-width:1600px) {
+
+
+  .header {
+    display: flex;
+
+    justify-content: flex-start;
+    background-size: 100% auto;
+
+    .bemVindo-Aling {
+      padding: 4rem 2rem 2rem 5rem;
+
+      .text-welcome {
+        margin: .5rem;
+      }
+
+    }
+
+    .perfil-Aling img {
+      border-radius: 30%;
+      margin-top: 4rem;
+      width: 16rem;
+      height: 16rem;
+
+    }
+
+    .frase-Aling {
+      margin-top: 4rem;
+
+      .text-frase {
+        margin: 0.5rem;
+      }
+
+    }
+
+    #autor-Aling {
+      margin-top: 4rem;
+
+      .autor-text {
+        padding: 0 5rem 0 0;
+        margin: 0 0 1rem 0;
+      }
+    }
+
+  }
+
+  //SOBRE MIM //SOBRE MIM //SOBRE MIM //SOBRE MIM 
+
+  .section-Sobremim {
+    margin: auto auto 7rem auto;
+    width: 85%;
+
+    .content-Sobremim {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      width: 90%;
+      height: auto;
+
+      overflow: hidden;
+
+      .txt-sobremim {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px;
+        //flex-wrap: wrap;
+
+        p {
+          position: relative;
+          margin: 2rem 2rem 2rem 4rem;
+          flex: 1;
+          width: 80%;
+        }
+
+        #img1 {
+          margin: 0;
+          box-shadow: 0 0 0.5em #000;
+        }
+      }
+
+
+      // CARROSSEL CARROSSEL CARROSSEL CARROSSEL CARROSSELCARROSSEL
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 41rem;
+        position: relative;
+
+
+        i {
+          top: 50%;
+          height: 46px;
+          width: 46px;
+          cursor: pointer;
+          font-size: 1.2rem;
+          position: absolute;
+          text-align: center;
+          line-height: 46px;
+          background: #fff;
+          border-radius: 50%;
+          transform: translateY(40%);
+        }
+
+        i:first-child {
+          left: -70px;
+          display: none;
+        }
+
+        i:last-child {
+          right: -50px;
+        }
+
+        .carousel {
+          overflow: hidden;
+          font-size: 0px;
+          cursor: pointer;
+          white-space: nowrap;
+          scroll-behavior: smooth;
+          width: 100%;
+          padding: 1rem;
+
+
+          .dragging {
+            cursor: grab;
+            scroll-behavior: auto;
+          }
+
+          .dragging img {
+            pointer-events: none;
+          }
+
+          img {
+            height: 19rem;
+            min-width: 19rem;
+            object-fit: cover;
+            margin-left: 1rem;
+            //width: calc(100% / 2);
+          }
+
+          img:first-child {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS // SOFT SKILLS 
+
+
+  #Softskills {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(3, calc(90% / 3));
+
+    .text-softskill {
+      margin: 0;
+    }
+
+    .cards-soft {
+      height: 180px;
+
+      .card-soft {
+        height: 80px;
+        margin-top: 10px;
+      }
+    }
+
+    .text-softskill {
+      grid-column: 1/4;
+    }
+
+    .card4 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .card5 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .card6 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+  }
+
+
+
+  //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS //HARD SKILLS 
+
+  #Hardskills {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(3, calc(90% / 3));
+
+    .text-hardskill {
+      margin: 0;
+    }
+
+    .cards-hard {
+      height: 180px;
+
+      .card-hard {
+        height: 80px;
+        margin-top: 10px;
+      }
+    }
+
+
+
+
+    .text-hardskill {
+      grid-column: 1/4;
+    }
+
+    .card-4 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .card-5 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .card-6 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+  }
+
+  // PROJETOS // PROJETOS // PROJETOS // PROJETOS // PROJETOS 
+  .section-projetos {
+    margin: 4rem 0 15rem 0;
+
+    .miniContainer-projetos {
+
+      width: 80%;
+      //height: auto;
+
+      .projetos-Content {
+
+        .cards-projetos {
+          min-width: 13rem;
+
+          .txt-Projetos {
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 1rem;
+          }
+
+        }
+      }
+    }
+
+    .mais-projetos {
+
+      transition: 0.3s;
+    }
+  }
+}

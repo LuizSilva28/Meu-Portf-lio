@@ -53,7 +53,7 @@ body {
   transition: 0.3s;
 }
 .oculto .asideAling {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .oculto .txtAling {
   display: none;
@@ -95,7 +95,7 @@ body {
   transition: 0.3s;
 }
 .asideBar .asideAling {
-  overflow-x: hidden;
+  overflow: hidden;
   margin-bottom: 20rem;
 }
 .asideBar a {
@@ -158,6 +158,7 @@ body {
 .header .perfil-Aling img {
   border-radius: 30%;
   box-shadow: inset 0 0 1em, 0 0 1em #0b1224;
+  object-fit: cover;
   width: 19rem;
   height: 19rem;
 }
@@ -368,7 +369,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 12rem 0 20rem 0;
+  margin: 2rem 0 20rem 0;
 }
 .section-projetos .título-projetos {
   display: flex;
@@ -382,14 +383,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  height: auto;
+  max-width: 80rem;
+  height: 30rem;
   padding: 1rem;
   border-top: 2px solid #0d6dde;
   border-bottom: 2px solid #0d6dde;
   border-radius: 20px;
   box-shadow: 2px 3px 30px #000;
-  transition: 0.3s;
+  transition: height 0.3s ease;
 }
 .section-projetos .miniContainer-projetos .projetos-Content {
   display: grid;
@@ -398,11 +399,12 @@ body {
   margin: 3rem 0 0 0;
   gap: 4rem 2rem;
   justify-content: center;
+  overflow: hidden;
 }
 .section-projetos .miniContainer-projetos .projetos-Content .cards-projetos {
   display: flex;
   flex-direction: column;
-  min-width: 13rem;
+  max-width: 18rem;
   max-height: auto;
   border: 2px solid #0d6dde;
   border-radius: 15px;
@@ -445,7 +447,7 @@ body {
   margin: 0px auto 0px auto;
 }
 .section-projetos .mais-projetos {
-  height: auto;
+  height: 47rem;
 }
 .section-projetos .mais-projetos .projetos-Content {
   margin: 1rem;
@@ -1100,6 +1102,7 @@ body {
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: 90%;
+    overflow: scroll;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
     display: flex;
@@ -1309,33 +1312,26 @@ body {
     grid-row: 4/5;
   }
   #Projetos .miniContainer-projetos {
-    min-width: 80%;
-    height: 37rem;
-    overflow-x: hidden;
+    min-width: 28rem;
+    height: 40rem;
+    overflow: hidden;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 70%;
+    grid-template-columns: 100%;
+    overflow: scroll;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos {
-    min-width: 23rem;
-    min-height: 20rem;
+    display: flex;
+    min-width: 22rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a {
     height: 80%;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos a .card-alingImg {
     height: 100%;
-    object-fit: cover;
   }
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
-    height: 35%;
     font-size: 0.9rem;
-  }
-  #Projetos .miniContainer-projetos .projetos-Content #sem-projetos {
-    display: flex;
   }
   #Projetos .miniContainer-projetos #bnt-projetos {
     display: none;
@@ -1462,93 +1458,6 @@ body {
   .section-Sobremim .content-Sobremim .wrapper .carousel img:first-child {
     margin-left: 0px;
   }
-  .section-Sobremim .content-Sobremim #Softskills {
-    display: grid;
-    gap: 0.2rem;
-    grid-template-columns: repeat(3, 50%);
-  }
-  .section-Sobremim .content-Sobremim #Softskills .text-softskill {
-    margin: 0;
-  }
-  .section-Sobremim .content-Sobremim #Softskills .cards-soft {
-    height: 180px;
-  }
-  .section-Sobremim .content-Sobremim #Softskills .cards-soft .card-soft {
-    height: 80px;
-    margin-top: 10px;
-  }
-  .section-Sobremim .content-Sobremim #Softskills .text-softskill {
-    grid-column: 1/3;
-  }
-  .section-Sobremim .content-Sobremim #Softskills .card3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .section-Sobremim .content-Sobremim #Softskills .card4 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .section-Sobremim .content-Sobremim #Softskills .card5 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  .section-Sobremim .content-Sobremim #Softskills .card6 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-  }
-  .section-Sobremim .content-Sobremim #Hardskills {
-    display: grid;
-    gap: 0.2rem;
-    grid-template-columns: repeat(3, 30%);
-  }
-  .section-Sobremim .content-Sobremim #Hardskills .text-hardskill {
-    margin: 0;
-  }
-  .section-Sobremim .content-Sobremim #Hardskills .cards-hard {
-    height: 180px;
-  }
-  .section-Sobremim .content-Sobremim #Hardskills .cards-hard .card-hard {
-    height: 80px;
-    margin-top: 10px;
-  }
-  .section-Sobremim .content-Sobremim #Hardskills .text-hardskill {
-    grid-column: 1/4;
-  }
-  .section-Sobremim .content-Sobremim #Hardskills .card-4 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .section-Sobremim .content-Sobremim #Hardskills .card-5 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .section-Sobremim .content-Sobremim #Hardskills .card-6 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-  .section-Sobremim .content-Sobremim .miniConatiner-projetos {
-    min-width: 40rem;
-    height: 40rem;
-  }
-  .section-Sobremim .content-Sobremim .miniConatiner-projetos .projetos-Content {
-    grid-template-columns: repeat(2, 40%);
-  }
-  .section-Sobremim .content-Sobremim .miniConatiner-projetos .cards-projetos {
-    min-width: 13rem;
-    min-height: 12rem;
-  }
-  .section-Sobremim .content-Sobremim .miniConatiner-projetos .project3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .section-Sobremim .content-Sobremim .miniConatiner-projetos .project4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .section-Sobremim .content-Sobremim .mais-projetos {
-    height: 70rem;
-    transition: 0.3s;
-  }
   #Softskills {
     display: grid;
     gap: 0.2rem;
@@ -1622,6 +1531,8 @@ body {
   }
   #Projetos .miniContainer-projetos {
     min-width: 50rem;
+    height: 30rem;
+    transition: height 0.3s easy;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     grid-template-columns: repeat(2, 45%);
@@ -1638,17 +1549,23 @@ body {
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
     font-size: 0.9rem;
   }
-  #Projetos .project3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  #Projetos .project4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
+  #Projetos .miniContainer-projetos .projetos-Content .project3,
+  #Projetos .miniContainer-projetos .projetos-Content .project4 {
+    display: none;
   }
   #Projetos .mais-projetos {
     min-width: 50rem;
-    height: auto;
+    height: 75rem;
+  }
+  #Projetos .mais-projetos .projetos-Content .project3 {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #Projetos .mais-projetos .projetos-Content .project4 {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }
 @media (min-width: 1101px) and (max-width: 1300px) {
@@ -1837,7 +1754,8 @@ body {
     margin: 2rem 0 15rem 0;
   }
   #Projetos .miniContainer-projetos {
-    min-width: 60rem;
+    min-width: 50rem;
+    height: 32rem;
   }
   #Projetos .miniContainer-projetos .projetos-Content {
     width: 100%;
@@ -1855,17 +1773,24 @@ body {
   #Projetos .miniContainer-projetos .projetos-Content .cards-projetos .txt-Projetos {
     font-size: 0.9rem;
   }
-  #Projetos .miniContainer-projetos .projetos-Content .project3 {
+  #Projetos .miniContainer-projetos .projetos-Content .project3,
+  #Projetos .miniContainer-projetos .projetos-Content .project4 {
+    display: none;
+  }
+  #Projetos .mais-projetos {
+    min-width: 50rem;
+    height: 80rem;
+    transition: 0.3s;
+  }
+  #Projetos .mais-projetos .projetos-Content .project3 {
+    display: flex;
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  #Projetos .miniContainer-projetos .projetos-Content .project4 {
+  #Projetos .mais-projetos .projetos-Content .project4 {
+    display: flex;
     grid-column: 2/3;
     grid-row: 2/3;
-  }
-  #Projetos .mais-projetos {
-    min-width: 60rem;
-    transition: 0.3s;
   }
 }
 @media (min-width: 1301px) and (max-width: 1600px) {
