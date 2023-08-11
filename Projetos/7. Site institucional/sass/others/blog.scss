@@ -1,0 +1,222 @@
+html,
+body {
+
+  box-sizing: border-box;
+  font-family: 'Philosopher';
+
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  background: $color-Home3;
+  top: 5rem;
+  -webkit-mask-image: url("../../assets/elemento-curvo.svg");
+
+
+  .font-logo {
+    font-family: 'Lobster Two', cursive;
+  }
+}
+
+
+.div-PaideTodos {
+  background-image: linear-gradient(0deg, $color-Home1, $bg-section1);
+
+
+  /* .elemento1 {
+    z-index: 1;
+    position: relative;
+
+  }
+
+
+
+  /*  .elemento1::after {
+    content: '';
+    width: 100%;
+    height: 4rem;
+    background-color: $color-Home3;
+    top: 4rem;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    display: block;
+  }
+
+  .elemento2::before {
+    content: '';
+    width: 80%;
+    height: 80%;
+    background-color: red;
+    top: 3.7rem;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    clip-path: ellipse(50% 9% at 23.8% 9%);
+
+  }
+
+  .elemento3::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    clip-path: ellipse(50% 9.3% at 67% 3.5%);
+    display: block;
+
+  }*/
+
+
+
+
+  .blogCards-center {
+
+
+    gap: 1rem;
+    padding: 3rem;
+    background-color: transparent;
+
+
+
+
+
+    .titulo-BgOpacity {
+
+
+      .titulo-cardsText {
+        z-index: 1;
+        margin-top: 5%;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px $color-Home3;
+        color: $white-color;
+        position: relative;
+      }
+
+
+
+    }
+
+
+
+
+
+
+    #cardBlog:hover {
+      box-shadow: 2px 2px 10px $color-Home3;
+      transition: .3s;
+      border: none;
+    }
+
+    .card-Pai {
+
+      width: 18rem;
+      background-color: $color-Home2;
+      color: $white-color;
+      border-radius: 1rem;
+
+      .title-myCard {
+        text-align: center;
+      }
+
+
+    }
+
+
+  }
+
+
+
+
+  .aba-Curiosidades {
+
+    height: auto;
+    background-color: $color-Home1;
+
+    .text-AbaCuriosidades {
+      z-index: 1;
+      margin-top: 5%;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 4px $color-shadowIcon;
+      color: $white-color;
+      position: relative;
+    }
+
+    .card-Pai {
+
+      width: 25rem;
+
+      .cardCuriosidadeBlog-img1 {
+        border-radius: 1rem;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  header {
+    .myNavbar {
+      .mine_menu3 {
+        margin-top: 1rem;
+        background-image: linear-gradient(45deg, $color-Home3, $color-shadowIcon);
+        border-radius: 1rem;
+
+        .alinhando_FaqMineMenu3 {
+
+          margin: 2rem 0 0 auto !important;
+        }
+
+        ul {
+          width: auto !important;
+          padding-left: 2rem !important;
+
+          li {
+            width: auto !important;
+            padding: 0 !important;
+
+            a {
+              width: auto !important;
+              margin: 0rem 1rem 0rem auto !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blogCards-center {
+    .titulo-BgOpacity {
+      padding-bottom: 0 !important;
+
+      .titulo-cardsText {
+        padding-bottom: 0 !important;
+      }
+    }
+
+    .mineContainerCard {
+      //margin: 0 !important;
+      width: 95% !important;
+
+      .mineSectionCard {}
+    }
+
+    .aba-Curiosidades {
+      .card-Pai {
+        max-width: 95% !important;
+
+        .cardCuriosidadeBlog-img1 {}
+      }
+    }
+  }
+}
