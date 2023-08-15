@@ -26,57 +26,6 @@ header::after {
   background-image: linear-gradient(0deg, $color-Home1, $bg-section1);
 
 
-  /* .elemento1 {
-    z-index: 1;
-    position: relative;
-
-  }
-
-
-
-  /*  .elemento1::after {
-    content: '';
-    width: 100%;
-    height: 4rem;
-    background-color: $color-Home3;
-    top: 4rem;
-    left: 0;
-    position: absolute;
-    z-index: 0;
-    display: block;
-  }
-
-  .elemento2::before {
-    content: '';
-    width: 80%;
-    height: 80%;
-    background-color: red;
-    top: 3.7rem;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-    display: block;
-    clip-path: ellipse(50% 9% at 23.8% 9%);
-
-  }
-
-  .elemento3::after {
-    content: '';
-    width: 80%;
-    height: 80%;
-    background-color: blue;
-    top: 0;
-    right: 0;
-    position: absolute;
-    z-index: 0;
-    clip-path: ellipse(50% 9.3% at 67% 3.5%);
-    display: block;
-
-  }*/
-
-
-
-
   .blogCards-center {
 
 
@@ -155,9 +104,7 @@ header::after {
 
       width: 25rem;
 
-      .cardCuriosidadeBlog-img1 {
-        border-radius: 1rem;
-      }
+
 
     }
   }
@@ -215,7 +162,7 @@ header::after {
       .card-Pai {
         max-width: 95% !important;
 
-        .cardCuriosidadeBlog-img1 {}
+
       }
     }
   }
