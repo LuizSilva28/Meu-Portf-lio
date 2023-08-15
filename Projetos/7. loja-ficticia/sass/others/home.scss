@@ -123,12 +123,7 @@ body {
     padding: 3rem;
     background-color: $color-Home1;
 
-    .titulo-cards {
 
-
-      // background-image: (url(../../img/Esboço\ de\ sacos\ elegantes\ de\ mulher\ sem\ costura\ _\ Vetor\ Grátis\ \(1\).jpg));
-
-    }
 
     .titulo-BgOpacity {
       //background-color: $color-shadowIcon;
@@ -214,28 +209,30 @@ body {
       height: 20em;
 
       .myImg-1 {
-        background-image: url(../../img/look-home-3.jfif) !important;
+        background-image: url(../../img/look-home-3.jfif);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
+
+
       }
 
 
       .myImg-2 {
-        background-image: url(../../img/look-home-4.jfif) !important;
+        background-image: url(../../img/look-home-4.jfif);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
 
       }
 
-      .myImg-3 {
+      /*.myImg-3 {
         background-image: url(../../img/look-home-5.jfif);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
 
-      }
+      }*/
     }
 
 
