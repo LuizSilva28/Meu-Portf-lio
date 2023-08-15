@@ -1,0 +1,118 @@
+body {
+  background-color: $bg-section1;
+  font-family: 'Philosopher';
+}
+
+.font-logo {
+  font-family: 'Lobster Two', cursive;
+}
+
+.container-faq {
+  margin: 10% auto 0 auto;
+  border: none;
+
+  .miniContainer_perguntas {
+    background-color: transparent;
+
+    .duvidas_frequentes {
+      margin-left: 10%;
+
+      box-shadow: 1px 1px 4px $color-shadowIcon;
+
+      ul,
+      li,
+      button {
+        border: none;
+        padding: .2rem;
+      }
+    }
+
+    .pergunta_Suporte {
+      box-shadow: 1px 1px 4px $color-shadowIcon;
+      max-width: 35rem;
+      background-color: $white-color;
+    }
+  }
+
+
+
+}
+
+
+@media screen and (max-width:460px) {
+
+  header {
+    .myNavbar {
+      .mine_menu1 {
+        margin-top: 1rem;
+        background-image: linear-gradient(45deg, $color-Home3, $color-shadowIcon);
+        border-radius: 1rem;
+
+        .alinhando_FaqMineMenu1 {
+
+          margin: 2rem 0 0 auto !important;
+        }
+
+        ul {
+          width: auto !important;
+          padding-left: 2rem !important;
+
+          li {
+            width: auto !important;
+            padding: 0 !important;
+
+            a {
+              width: auto !important;
+              margin: 0rem 1rem 0rem auto !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .containerPai-Faq {
+    padding: 0;
+
+    .container-faq {
+      width: 100%;
+      margin: 20% 0 0 0;
+      padding: 0;
+
+      .miniContainer_perguntas {
+        align-items: center;
+
+        .containerDuvidas_frequentes {
+          padding: 0 .2rem 0 .2rem;
+
+          .duvidas_frequentes {
+            margin-left: 0;
+            font-size: .8em;
+          }
+
+          .pergunta_Suporte {
+
+
+            .input-group {
+              [ type="text"] {
+                font-size: .8em;
+              }
+
+              .input-group-text {
+                font-size: .8em;
+              }
+            }
+
+            .form-label {
+              font-size: .8em;
+            }
+
+            .form-control {
+              font-size: .8em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
