@@ -200,16 +200,16 @@ body {
   height: 20em;
 }
 .home-aling .myContainer1 .Meu-Carrossel .myImg-1 {
-  background-image: url("../../img/look-home-3.jfif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  width: 35%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 100% 100%;
 }
 .home-aling .myContainer1 .Meu-Carrossel .myImg-2 {
-  background-image: url("../../img/look-home-4.jfif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  width: 35%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 100% 100%;
 }
 .home-aling .myContainer1 .box-Balao2 {
   padding: 1rem;
@@ -542,6 +542,7 @@ header::after .font-logo {
 .area-Produtos .ProdutosPrincipais .produto-Principal-2 {
   background-position: 0% 50%;
 }
+
 .section-avaliacoes {
   position: relative;
   background-image: linear-gradient(to bottom, rgb(254, 213, 220), #ff6666);
