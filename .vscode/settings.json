@@ -1,3 +1,8 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "files.autoSave": "onFocusChange",
+  "editor.accessibilityPageSize": 10,
+  "workbench.editor.enablePreview": false,
+  "editor.mouseWheelZoom": true,
+  "window.zoomLevel": 1
 }
