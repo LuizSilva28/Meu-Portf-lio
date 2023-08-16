@@ -206,30 +206,32 @@ body {
     .Meu-Carrossel {
       background-image: linear-gradient(45deg, #5e2121, rgba(0, 0, 0, 0.8));
       display: flex;
-
-
+      width: 50%;
       height: 20em;
+      border-radius: 1rem;
 
 
 
+      .containerMeu-Carrossel {
 
 
 
-      .myImg-1 {
+        .myImg-1 {
+          margin: 0 auto 0 auto;
+          max-width: 11.7em;
+          max-height: 20em;
+          object-fit: contain !important;
 
-        width: 35%;
-        height: 100%;
-        object-fit: contain;
-        object-position: 100% 100%;
-      }
+        }
 
 
-      .myImg-2 {
-
-        width: 35%;
-        height: 100%;
-        object-fit: contain;
-        object-position: 100% 100%
+        .myImg-2 {
+          margin: 0 auto 0 auto;
+          max-width: 14em;
+          max-height: 20em;
+          object-fit: contain !important;
+          object-position: 100% 100%
+        }
       }
 
 
