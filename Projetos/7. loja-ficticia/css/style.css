@@ -321,7 +321,7 @@ body {
   font-family: "Philosopher";
 }
 
-header::after {
+.myNavbar::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -331,7 +331,7 @@ header::after {
   -webkit-mask-image: url(../../assets/elemento-curvo.svg);
   mask-image: url(../../assets/elemento-curvo.svg);
 }
-header::after .font-logo {
+.myNavbar::after .font-logo {
   font-family: "Lobster Two", cursive;
 }
 
