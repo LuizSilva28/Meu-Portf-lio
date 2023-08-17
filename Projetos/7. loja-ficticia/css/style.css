@@ -328,8 +328,8 @@ header::after {
   height: 4rem;
   background: #5e2121;
   top: 5rem;
-  -webkit-mask-image: url("../../assets/elemento-curvo.svg");
-  mask-image: url("../../assets/elemento-curvo.svg");
+  -webkit-mask-image: url(../../assets/elemento-curvo.svg);
+  mask-image: url(../../assets/elemento-curvo.svg);
 }
 header::after .font-logo {
   font-family: "Lobster Two", cursive;
