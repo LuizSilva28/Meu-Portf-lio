@@ -180,9 +180,11 @@ header::after {
 
 
 .section-avaliacoes {
-
+  display: flex;
+  justify-content: center;
   position: relative;
   background-image: linear-gradient(to bottom, $bg-section1, $color-Home1);
+
 
 
   .container-Avaliacoes {
@@ -239,11 +241,11 @@ header::after {
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
-          width: 30rem;
+          width: 28rem;
           height: 20rem;
-          top: 30%;
-          left: 55%;
-
+          top: 25%;
+          right: 1%;
+          left: 1%;
 
           background-image: linear-gradient(45deg, $color-Home3, $black-color);
           color: $white-color;
@@ -478,6 +480,33 @@ header::after {
         }
       }
 
+    }
+  }
+
+  .section-avaliacoes {
+    .container-Avaliacoes {
+      .avaliacoes {
+        .container-Notas {
+          display: flex;
+          justify-content: center;
+
+          .container-Ratingfloot {
+            margin: 0 auto 0 5%;
+            width: 90%;
+            height: auto;
+            top: 15%;
+            left: 0%;
+
+            .star_rating {
+
+              .star {
+                font-size: 2rem;
+
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
