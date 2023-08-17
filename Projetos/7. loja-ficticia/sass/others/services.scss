@@ -158,28 +158,20 @@ header::after {
     color: $white-color;
     font-size: 1em;
 
+    .miniContainer-ProdutosPrincipais {
+      display: flex;
+      justify-content: end;
+    }
 
     .produto-Principal-1,
     .produto-Principal-2,
     .produto-Principal-3 {
 
-      height: 16em;
-      margin: 1rem;
-      background-image: url(../../img/look-home-9.jfif);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 100% 50%;
+      max-height: 16em;
+      margin-bottom: 3rem;
       border-radius: .3rem;
 
     }
-
-    .produto-Principal-2 {
-      background-position: 0% 50%;
-
-
-
-    }
-
 
   }
 }
@@ -436,6 +428,15 @@ header::after {
     padding: 0;
 
     .ProdutosPrincipais {
+      .miniContainer-ProdutosPrincipais {
+        display: flex;
+        justify-content: center;
+      }
+
+      .miniContainer-ProdutosPrincipais-mobile {
+        display: flex;
+        justify-content: center;
+      }
 
       .produto-Principal-1,
       .produto-Principal-2,
